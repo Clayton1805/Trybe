@@ -1,0 +1,19 @@
+
+crtl + shift + d // abrir the buguer; para acompanhar ele click no canto esquerdo das linha de codigo e faça bolinhas vermelhas o breakpoint, que serve para dizer de ode ate onde ele tem que executar.
+
+ctrl + alt + n executar o javaScript ele te da o output na tela.
+
+let varial = null // redefine o valor toda vez que alguem entra na pagina.
+
+% // resto de uma operção de divisão.
+
+=== // pergunta se a iguadade  é verdadeiro ou falso.
+
+variavel += variavel2 // é igual a variavel = variavel + variavel2.
+
+&& // função logica E.
+
+|| // função logica OU.
+
+! //operador logico NÃO quando colocado na frente de uma variavel booleana ex: !variavel; ele retorna o resultado oposto dessa variavel.
+
