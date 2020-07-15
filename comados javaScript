@@ -17,3 +17,9 @@ variavel += variavel2 // é igual a variavel = variavel + variavel2.
 
 ! //operador logico NÃO quando colocado na frente de uma variavel booleana ex: !variavel; ele retorna o resultado oposto dessa variavel.
 
+console.log() // imprime no editor a informação que está dentro de ().
+
+let variavel = [22, "clayton", 684, ["é nois", 2]] // assim se declara uma array com [] e também é possivel fazer uma rray dentro de uma array [[], []].
+
+variavel[0] // colocando [] em frete a uma array vc chama o valor da array se quise chamar o valor de uma array dentro de outra é só variavel[3][1] no casso do de cima isso daria 2
+
