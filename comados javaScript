@@ -5,7 +5,7 @@ ctrl + alt + n executar o javaScript ele te da o output na tela.
 
 let varial = null // redefine o valor toda vez que alguem entra na pagina.
 
-% // resto de uma operção de divisão.
+% // resto de uma operção de divisão sem numeros quebrados.
 
 === // pergunta se a iguadade  é verdadeiro ou falso.
 
