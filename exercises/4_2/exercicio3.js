@@ -6,4 +6,5 @@ for (let index = 0; index < numbers.length; index += 1){
 }
 
 let average = sum/numbers.length;
+
 console.log("A média do meu array é: " + average)

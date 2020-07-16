@@ -21,5 +21,15 @@ console.log() // imprime no editor a informação que está dentro de ().
 
 let variavel = [22, "clayton", 684, ["é nois", 2]] // assim se declara uma array com [] e também é possivel fazer uma rray dentro de uma array [[], []].
 
-variavel[0] // colocando [] em frete a uma array vc chama o valor da array se quise chamar o valor de uma array dentro de outra é só variavel[3][1] no casso do de cima isso daria 2
+variavel[0] // colocando [] em frete a uma array vc chama o valor da array se quise chamar o valor de uma array dentro de outra é só variavel[3][1] no casso do de cima isso daria 2.
+
+break; // encerra e sai da estrura de repetição que se encontra.
+
+while (n < 10){ n++} // uma estrutura de repetição que permanece executando enquanto o teste dentro de () retornar verdadeiro.
+(while=enquanto)
+
+function chamarFuncao(parametro1, parametro2){ return parametro1 + parametro2;} // encapsula codigo que executa uma determinada função e retorna o dado que você quer.
+chamarFuncao("Clayton ", "Miguel "); // isso vai ser iguel "Clayton Miguel" trazendo o return da função de cima.
+
+
 
