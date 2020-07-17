@@ -31,5 +31,5 @@ while (n < 10){ n++} // uma estrutura de repetição que permanece executando en
 function chamarFuncao(parametro1, parametro2){ return parametro1 + parametro2;} // encapsula codigo que executa uma determinada função e retorna o dado que você quer.
 chamarFuncao("Clayton ", "Miguel "); // isso vai ser iguel "Clayton Miguel" trazendo o return da função de cima.
 
-
+math // objeto do java Script referente algumas funçoes matematicas
 
