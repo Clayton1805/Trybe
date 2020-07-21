@@ -1,4 +1,6 @@
 
+crtl + shift + a // para comenta e descomentar codigo com/* */.
+
 crtl + shift + d // abrir the buguer; para acompanhar ele click no canto esquerdo das linha de codigo e faça bolinhas vermelhas o breakpoint, que serve para dizer de ode ate onde ele tem que executar.
 
 ctrl + alt + n executar o javaScript ele te da o output na tela.
