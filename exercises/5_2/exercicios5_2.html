@@ -80,8 +80,26 @@
 
       let div4 = document.createElement("div");
       div4.className = "right-content";
-      document.querySelector("div.main-content").appendChild(div4); 
+      document.querySelector("div.main-content").appendChild(div4);
 
+      let img1 = document.createElement("img");
+      img1.className = "small-image";
+      img1.src = "https://picsum.photos/200 ";
+      document.querySelector(".left-content").appendChild(img1);
+
+      let ul1 = document.createElement("ul");
+      for (let n = 1; n <= 10; n += 1) {       
+        let li = document.createElement("li");
+        li.innerHTML = n; 
+        ul1.appendChild(li);               
+      }   
+      document.querySelector(".right-content").appendChild(ul1);
+
+      for (let n1 = 1; n1 <= 3; n1 += 1) { 
+      let h3 = document.createElement("h3");      
+      document.querySelector("div.main-content").appendChild(h3);
+      console.log(h3);
+      }
     </script>
   </body>
 </html>
