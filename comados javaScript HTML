@@ -1,0 +1,50 @@
+
+document.getElementById("oId") // traz a teg e o conteudo de uma teg com um id html que tenha o id especificado em "".
+
+document.getElementsByClassName("aClasse")[0] // acessa todos as tegs html com essa classe especificada em "" devolvendo um array listando as classes na ordem que cima para baixo que eles se encontram no html assim para chamar uma das classes especificamente e obter sua teg e seu conteudo é necessario chamala como em um array convencional com [um numero correspondente a sua posição no array].
+
+document.getElementsByTagName("p")[0] // igual o getElementsByClassName só em vez de classe ele funciona para tegs.
+
+document.querySelector(".main-content") ou ("#oId") ou ("p") // .querySelector serve para chamar a teg e o conteudo do 1° na linha do html que tiver a especificação dentro do "", o diferencial é que com ele você pode chamar qualquer elemeto html usando a mesma forma de chamar elementos do css.
+
+document.querySelectorAll(".main-content .center-content")[0] // .querySelectorAll é semelhante ao .querySelector porém ao inves de chamar apenas o primeiro que encontrar ele pega todos os que tenha as especificações de "" e os organiza na ordem em que aparece no codigo em uma array, e para chamar a teg e o conteudo é so usar [com o numero desejado]. 
+
+document.getElementsByTagName("p")[0].innerHTML += "<p>rico</p>";// .innerHTML  traz o conteudo do codigo html permitindo que ele sejá alterado tanto em codigo quanto em texto.
+
+document.getElementsByTagName("p")[0].innerText;// .innertext tras o texto da teg html.
+
+document.querySelectorAll(".main-content .center-content")[0].style.backgroundColor = "rgb(76,164,109)";// .style permite que sejam alteradas propiedades css especificando apos esse comado com . seguidos de comados css que tem uma grafia mais condizente com javaScript ex: background-color se torna backgroundColor; font-weight se torna fontWeight; text-transform se torna textTransform ...etc.
+
+document.getElementById("oId").parentNode // retona o elemento pai da teg com id "oId" ou seja a teg html que esta encapsulando ela por exemplo se ela não tiver nenhuma outrateg encapsulando ela como <div> ela vai retornar o <body> que é onde o conteudo html se encontra. 
+Segue comandos semelhantes:
+parentElement: retorna o elemento pai sendo ele uma teg.
+children: retorna um array com todas as tegs filhos.
+firstElementChild: retorna a primeira teg filho.
+lastElementChild: retorna a última tag filho.
+nextSibling: retorna o próximo nó.
+previousSibling: retorna o nó anterior.
+nextElementSibling: retorna o próximo elemento.
+previousElementSibling: retorna o elemento anterior.
+(obs: o Element muitas vezes no lugar do Note serve para especificar que so queremos que considere aquilo que tem teg e não linhas com espaços no codigo ou textos soltos).
+
+document.createElement("p").innerHTML = "olá"; // cria uma teg html nesse caso vai retornar uma teg <p></p>, depois disso você pode continuar adicionado conteudo nela como se fosse uma teg normal.
+
+document.getElementById("divComUmId").appendChild(document.createElement("p").innerHTML = "olá") // .appendChild() incerre um elemeto html dentro da teg referida antes de seu . na ultima posição do elemento.(somente um elemento por vez)
+
+document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .querySelector() remove o tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
+
+document.createElement("p").className = "batata";// .className serve para definir classe a tegs.
+
+document.createElement("p").id = "batatinha";// serve para definir ids a tegs.
+
+document.querySelectorAll(".main-content")[0].addEventListener("click", function() { qualquer codigo javaScript})// .addEventListener adiciona uma resposta a interação do usuario com o site ex: click, passar o mouse em cima, rolar a tela para baixo ...etc; primeiro o evento é especificado dentro de "" seguindo o padrão do javaScript então depois de uma , vem o codigo javaScript que geralmete vem dentro de função.
+
+change
+
+mouseover
+
+math.random() // retorna um numero aleatorio entre 0 e 1.
+
+parseInt() // retorna somente os numeros da string.
+
+window.innerWidth // retorna a largura da pagina.

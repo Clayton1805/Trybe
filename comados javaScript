@@ -1,11 +1,13 @@
 
+crtl + shift + a // para comenta e descomentar codigo com/* */.
+
 crtl + shift + d // abrir the buguer; para acompanhar ele click no canto esquerdo das linha de codigo e faça bolinhas vermelhas o breakpoint, que serve para dizer de ode ate onde ele tem que executar.
 
 ctrl + alt + n executar o javaScript ele te da o output na tela.
 
 let varial = null // redefine o valor toda vez que alguem entra na pagina.
 
-% // resto de uma operção de divisão.
+% // resto de uma operção de divisão sem numeros quebrados.
 
 === // pergunta se a iguadade  é verdadeiro ou falso.
 
@@ -16,4 +18,20 @@ variavel += variavel2 // é igual a variavel = variavel + variavel2.
 || // função logica OU.
 
 ! //operador logico NÃO quando colocado na frente de uma variavel booleana ex: !variavel; ele retorna o resultado oposto dessa variavel.
+
+console.log() // imprime no editor a informação que está dentro de ().
+
+let variavel = [22, "clayton", 684, ["é nois", 2]] // assim se declara uma array com [] e também é possivel fazer uma rray dentro de uma array [[], []].
+
+variavel[0] // colocando [] em frete a uma array vc chama o valor da array se quise chamar o valor de uma array dentro de outra é só variavel[3][1] no casso do de cima isso daria 2.
+
+break; // encerra e sai da estrura de repetição que se encontra.
+
+while (n < 10){ n++} // uma estrutura de repetição que permanece executando enquanto o teste dentro de () retornar verdadeiro.
+(while=enquanto)
+
+function chamarFuncao(parametro1, parametro2){ return parametro1 + parametro2;} // encapsula codigo que executa uma determinada função e retorna o dado que você quer.
+chamarFuncao("Clayton ", "Miguel "); // isso vai ser iguel "Clayton Miguel" trazendo o return da função de cima.
+
+math // objeto do java Script referente algumas funçoes matematicas
 
