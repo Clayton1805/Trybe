@@ -11,7 +11,7 @@ document.querySelectorAll(".main-content .center-content")[0] // .querySelectorA
 
 document.getElementsByTagName("p")[0].innerHTML += "<p>rico</p>";// .innerHTML  traz o conteudo do codigo html permitindo que ele sejá alterado tanto em codigo quanto em texto.
 
-document.getElementsByTagName("p")[0].innertext += "rico";// .innertext permite somente que texto entre no html o tornado muito limitado comparado a .innerHTML.
+document.getElementsByTagName("p")[0].innerText;// .innertext tras o texto da teg html.
 
 document.querySelectorAll(".main-content .center-content")[0].style.backgroundColor = "rgb(76,164,109)";// .style permite que sejam alteradas propiedades css especificando apos esse comado com . seguidos de comados css que tem uma grafia mais condizente com javaScript ex: background-color se torna backgroundColor; font-weight se torna fontWeight; text-transform se torna textTransform ...etc.
 
@@ -36,3 +36,15 @@ document.getElementById("divComUmId").removeChild(document.querySelector(".main-
 document.createElement("p").className = "batata";// .className serve para definir classe a tegs.
 
 document.createElement("p").id = "batatinha";// serve para definir ids a tegs.
+
+document.querySelectorAll(".main-content")[0].addEventListener("click", function() { qualquer codigo javaScript})// .addEventListener adiciona uma resposta a interação do usuario com o site ex: click, passar o mouse em cima, rolar a tela para baixo ...etc; primeiro o evento é especificado dentro de "" seguindo o padrão do javaScript então depois de uma , vem o codigo javaScript que geralmete vem dentro de função.
+
+change
+
+mouseover
+
+math.random() // retorna um numero aleatorio entre 0 e 1.
+
+parseInt() // retorna somente os numeros da string.
+
+window.innerWidth // retorna a largura da pagina.
