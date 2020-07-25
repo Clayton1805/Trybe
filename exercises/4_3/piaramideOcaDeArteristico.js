@@ -11,7 +11,7 @@ for (let i = 1; i <= n; i += 2 ){
         linhaAteristico = linhaAteristico + " ";            
     }
     if (n === i && impar === true){
-        for (let i3 = 0; i3 < i; i3 += 1 ){
+        for (let i3 = 0; i3 < n; i3 += 1 ){
             linhaAteristico = linhaAteristico + "*";            
         }  
     }else if (n-1 === i && impar === false){
@@ -26,8 +26,7 @@ for (let i = 1; i <= n; i += 2 ){
                 linhaAteristico = linhaAteristico + "*"; 
             }else{
                 linhaAteristico = linhaAteristico + " ";
-            }
-                       
+            }                       
         } 
     }
     
