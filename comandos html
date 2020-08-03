@@ -1,0 +1,23 @@
+<input type="text" name="nome" maxlength=30> // maxlength define quantas caracteres podem ser escritas na caixa de texto.
+<input> //:
+type="ckeckbox" // faz quadrados de checar que a pessoa pode selcionar ou não.
+placeholder="digite algo" // deixa uma mensagem um poco fosca dentro do imput dizendo dando alguma instrução para o usuaria pelo texto que ele contem.
+disabled // desativa o campo de imput.
+maxlength="60" // define o maximo de caracteres que podem ser escritas no input.
+readonly // faz com que o valor do input não possa mais ser alterado e sirva somente para leitura.
+name="nome-completo" // da uma nomenclatura para o dado inserido isso serve para guardar esse dado de alguma forma.
+required // obriga a pessoa e prencher aquele requisito.
+
+<button name="" type="submit">click!!!</button>// define um botão para enviar dados do formulário para um manipulador de formulários.
+
+<label for="o-id-do-input-que-vc-que-que-seja-selecionado"></label>
+
+<select name="tamanho-de-camisas" id="">
+	<option>GG</option>
+	<option>G</option>
+	<option>M</option>
+</select> // cria opções de escolha em uma caixa para o usuario que pode escolher entre as option presentes.
+
+<textarea name=""
+
+
