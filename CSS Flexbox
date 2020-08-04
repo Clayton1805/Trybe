@@ -1,0 +1,35 @@
+.flex-container {
+  display: flex;
+}
+flex-container = container uma <div> com stilo flex.
+flex-box = elementos dentro do container flex.
+
+flex-direction: row; // essa prpriedade no container organiza em coluna ou linha as flex-box, por padrão essa propriedade é row (linha).
+column; // column organiza em uma coluna as flex-box
+row-reverse; // organiza os elementos como se estivesse espelhando a organização da row na tela dispondo o começo do conteudo da direita para a esquerda.
+column-revese; // dispõe o conteudo em uma coluna com o primeiro contedo em baixo dispondo eles de baixo par cima.
+
+flex-wrap: nowrap; // define se os itens devem quebrar ou não a linha, sendo que por padrão esse propriedade é nowrap, ou seja, os itens não quebram a linha. 
+wrap; // quando os flex-box dispostos em linha passam a largura do flex-container eles quebram e são dispostos no canto esquerdo em baixo da linha que ele estava antes.
+wrap-reverse; // faz a mesma coisa que o wrap porém a linha começa de baixo para cima ...(testar para ver)
+
+flex-flow: column wrap; // flex-flow é um atalho para as duas propriedades acima sendo que o primeiro valor que recebe é o do flex-direction e o segundo o do flex-wrap.
+
+justify-content: center; // alinha na horizontal(para uma linha) os flex-box com o flex-container como o texto justificado no word.
+flex-start; // gruda os flex-box na esqueda.
+flex-end; // gruda os flex-box na direita.
+center; // faz com que os flex-box grudem no centro da linha todos indo em direção ao centro.
+space-between; // dispõe os elementos(E) em linha assim: [E_E_E] com espaços iguais entre os elementos menos no fim e no começo.
+space-around; // dispõe os elementos(E) em linha assim: [_E__E__E_] com espaços iguais na esquerda e na direita em todos os elementos.
+
+align-items: center; // alinha na verticalmente(para uma linha) os flex-box com o flex-container.(as 3 primeiras propiedaes do justify-content valem para esse também);
+stretch; // gruda os flex-box com o topo do comprimeto da linha/ faz a altura da flex-box preencher toda linha.
+baseline; // gruda os flex-box com a base do comprimeto da linha/ faz a altura da flex-box se a menor possivel para caber o conteudo.
+
+align-self: flex-end; // igual ao align-items porém altera um unico flex-box.
+
+align-content: center; // igual o align-items porem é melhor para organizar flex-box na vertical com mais de uma linha pois ele agrupa as linhas.
+(aceita todas as propiedades tanto de justify-content quanto de justify-content menos baseline);
+
+order: 1; // por padão todos os flex-box tem esse valor como 0,se ele tiver um numero menor que 0 ele vai para o começo e se for maior ele vaia para o final da ordem dos flex-box, então se vc der a cada elemento um numero vc consegue ordenalos da forma que quiser.
+
