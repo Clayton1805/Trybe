@@ -38,9 +38,7 @@ document.createElement("p").className = "batata";// .className serve para defini
 document.createElement("p").id = "batatinha";// serve para definir ids a tegs.
 
 document.querySelectorAll(".main-content")[0].addEventListener("click", function() { qualquer codigo javaScript})// .addEventListener adiciona uma resposta a interação do usuario com o site ex: click, passar o mouse em cima, rolar a tela para baixo ...etc; primeiro o evento é especificado dentro de "" seguindo o padrão do javaScript então depois de uma , vem o codigo javaScript que geralmete vem dentro de função.
-
 change
-
 mouseover
 
 math.random() // retorna um numero aleatorio entre 0 e 1.

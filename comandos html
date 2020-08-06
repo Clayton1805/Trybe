@@ -20,4 +20,12 @@ required // obriga a pessoa e prencher aquele requisito.
 
 <textarea name=""
 
+<div></div> // agrupar em caixas o que você quise para fazer uma regra em css.
 
+<span></span> // agrupar textor para dar regra em css para ele.
+
+<a href="link.da.pagina">texto que aparece</a> // isso faz um link para uma pagina da web que abre em cima do site que voce esta.
+( <a target="_blan" href="link.da.pagina"> texto que aparece </a> = com essa adição de target="_blan" o site é aberto em outra guia) 
+( <a target="_blan" href="#id_da_caixa"> texto que aparece </a> = link que te leva até algum conteudo da sua pagina)
+
+<hr> // linha de divisão de conteudo.	
