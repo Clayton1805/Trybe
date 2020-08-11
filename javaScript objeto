@@ -1,0 +1,8 @@
+const objeto = {
+  chave1: 'Clayton',
+  chave2: 'Zica'
+}
+
+objeto.chave OU objeto['chave']// retorna o valor da chave do objeto.
+
+objeto.chave OU objeto['chave'] = "valorDaChave"; // igualando os valores dos objetos da forma mostrada você não só pode reatribuir os valores das propiedades do objeto como também caso 

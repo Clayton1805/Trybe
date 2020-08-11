@@ -31,7 +31,7 @@ document.createElement("p").innerHTML = "olá"; // cria uma teg html nesse caso 
 
 document.getElementById("divComUmId").appendChild(document.createElement("p").innerHTML = "olá") // .appendChild() incerre um elemeto html dentro da teg referida antes de seu . na ultima posição do elemento.(somente um elemento por vez)
 
-document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .querySelector() remove o tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
+document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .removeChild() remove  tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
 
 document.createElement("p").className = "batata";// .className serve para definir classe a tegs.
 

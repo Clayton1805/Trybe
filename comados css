@@ -12,7 +12,11 @@ background-color: rgb(17, 163, 106); // cor de fundo da caixa.
 
  border: 10px ridge rgb(4, 99, 23); // cria uma linha de margem no canto das caixas, o comado 1° pede grossura da linha em px; 2° estilo da linha ex: rindge, inset, outset; 3° a cor da linha pode ser em rgb ou em outro formato aceitavel.
 
- position: absolute; ou fixed; ou relative; // esse comado permite que você altere a posição de caixas; "absolute" muda a posição da caixa em relação ao topo do site; "fixed" muda aposição da caixa em relação ao topo do propio navegador deixando ele sempre visivel na pagina não importando se você rolala para cima ou para baixa; "relative" muda a posição da cixa em relação a posição padrão que ela se encontraria sem nenhuma regra css.
+ position: absolute; ou fixed; ou relative; // esse comado permite que você altere a posição de caixas; 
+"absolute" muda a posição da caixa em relação ao topo do site; 
+"fixed" muda aposição da caixa em relação ao topo do propio navegador deixando ele sempre visivel na pagina não importando se você rolala para cima ou para baixa; 
+"relative" muda a posição da cixa em relação a posição padrão que ela se encontraria sem nenhuma regra css.
+"static" ...
 
  top: 20px // epecifica a distancia que a caixa tem que ficar em relação ao "topo" relativo a position que você especificou.
 
