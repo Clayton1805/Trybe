@@ -7,3 +7,7 @@ Array.some
 Array.every 
 
 Array.sort
+
+Array.map
+
+Array.filter

@@ -1,0 +1,17 @@
+Array = Um array qualquer [].
+element = 1° parametro da função, Corresponde a todos os elementos da lista que são chamados um por um a cada loop.
+index = O numero do elemento na lista [0,1...] como o index em um for percorrendo um array.
+
+Array.forEach(element => element * 3); // Percorre todos os elementos do array como um " for in " e executa o codigo na frente da => a cada element.
+
+Array.find((element, index) => element === element && index !== index); // Retorna o 1° elemento do array que tenha a resposta booleana true vinda da arrow function =>.
+
+Array.some(element => element > 0); // Retorna true se 1 dos elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico E " && ".
+
+Array.every(element => element > 0); // Retorna true se TODOS os elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico OU " || ".
+
+Array.sort((valor1, valor2) => valor1 - valor2) // Retorna o array em uma ordem a sua escolha
+
+Array.map
+
+Array.filter
