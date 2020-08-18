@@ -72,9 +72,10 @@ function authorUnique() {
   books.forEach((bookElements1, n) => {
     books2.splice(n,1);
     resultados.push(books2.some(bookElements2 => bookElements1.author.birthYear === bookElements2.author.birthYear));
-    books2.push(bookElements1);
+    books2.splice(n,0,bookElements1);
   });
-  console.log(resultados);
+  // console.log(resultados);
+  return resultados.every(elementsBooleans => elementsBooleans === false);
 }
-authorUnique()
-// assert.equal(authorUnique(), expected_result);
+// console.log(authorUnique());
+assert.equal(authorUnique(), expected_result);
