@@ -1,0 +1,47 @@
+.flex-container {
+  display: flex;
+}
+flex-container = container uma <div> com stilo flex.
+flex-itens = elementos dentro do container flex.
+
+flex-direction: row; // essa prpriedade no container organiza em coluna ou linha as flex-itens, por padrão essa propriedade é row (linha).
+column; // column organiza em uma coluna as flex-itens
+row-reverse; // organiza os elementos como se estivesse espelhando a organização da row na tela dispondo o começo do conteudo da direita para a esquerda.
+column-revese; // dispõe o conteudo em uma coluna com o primeiro contedo em baixo dispondo eles de baixo par cima.
+
+flex-wrap: nowrap; // define se os itens devem quebrar ou não a linha, sendo que por padrão esse propriedade é nowrap, ou seja, os itens não quebram a linha. 
+wrap; // quando os flex-itens dispostos em linha passam a largura do flex-container eles quebram e são dispostos no canto esquerdo em baixo da linha que ele estava antes.
+wrap-reverse; // faz a mesma coisa que o wrap porém a linha começa de baixo para cima ...(testar para ver)
+
+flex-flow: column wrap; // flex-flow é um atalho para as duas propriedades acima sendo que o primeiro valor que recebe é o do flex-direction e o segundo o do flex-wrap.
+
+justify-content: center; // alinha na horizontal(para uma linha) os flex-itens com o flex-container como o texto justificado no word.
+flex-start; // gruda os flex-itens na esqueda.
+flex-end; // gruda os flex-itens na direita.
+center; // faz com que os flex-itens grudem no centro da linha todos indo em direção ao centro.
+space-between; // dispõe os elementos(E) em linha assim: [E_E_E] com espaços iguais entre os elementos menos no fim e no começo.
+space-around; // dispõe os elementos(E) em linha assim: [_E__E__E_] com espaços iguais na esquerda e na direita em todos os elementos.
+
+align-items: center; // alinha na verticalmente(para uma linha) os flex-itens com o flex-container.
+propiedades(flex-start, flex-end, stretch, baseline, center);
+stretch; // gruda os flex-itens com o topo do comprimeto da linha/ faz a altura da flex-itens preencher toda linha.
+baseline; // gruda os flex-itens com a base do comprimeto da linha/ faz a altura da flex-itens se a menor possivel para caber o conteudo.
+
+align-self: flex-end; // igual ao align-items porém altera um unico flex-itens.
+propiedades(flex-start, flex-end, stretch, baseline, center);
+
+align-content: center; // igual o align-items porem é melhor para organizar flex-itens na vertical com mais de uma linha pois ele agrupa as linhas.
+(aceita todas as propiedades tanto de justify-content quanto de justify-content menos baseline);
+
+order: 1; // por padão todos os flex-itens tem esse valor como 0,se ele tiver um numero menor que 0 ele vai para o começo e se for maior ele vaia para o final da ordem dos flex-itens, então se vc der a cada elemento um numero vc consegue ordenalos da forma que quiser.
+
+flex-grow: 1; // style dos flex-itens, por padrão seu valor é 0 ele especifica a largura dos flex-itens fazendo com que altomaticamente ele prencha toda a largura em branco do flex-container (se colocado em todos os flex-itens todos oculparão o mesmo espço em uma linha) se colocado um numero maior qu 1 como 2 esse flex-itens tera uma largura igual a de 2 flex-itens daquela linha.
+
+flex-shrink: 1; //style do flex-iten, valor padão 1, muda a contração do flex-iten dependendo do numero não muito util.
+
+flex-basis: 10%; // style do flex-iten, valor padão auto, define a largura minima do flex-iten sendo em px , % etc ou auto que defina a largura dependendo da largura do conteudo lá dentro.
+
+flex: 1 1 10%; // engloba todas as 3 propiedades acima com seus velores especificados na mesma ordem que saõ mostrados a cima também.
+
+
+

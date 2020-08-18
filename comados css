@@ -1,0 +1,33 @@
+caixa = qualquer informação dentro de uma funçaõ htm agrupando assim elas em caixas.(mais informaçõe pesquisar box model)
+obs: css lé o codigo de cima para baixo ou sejá valores em cima podem ser reatribuidos em baixo.
+
+ color: rgb( 34, 145, 164); // cor da letra.
+
+background-color: rgb(17, 163, 106); // cor de fundo da caixa.
+
+ padding: 10px; // espaço entre a borda da caixa e o conteudo.
+
+ margin: 0px auto; // espaçamento que a caixa tem de outras caixas, sendo o primeiro dado refernte ao topo e em baixo e o segundo . 
+(margin-right: = margem direita / margin-left: =  margem esquerda/ margin-bottom: margem inferior.
+
+ border: 10px ridge rgb(4, 99, 23); // cria uma linha de margem no canto das caixas, o comado 1° pede grossura da linha em px; 2° estilo da linha ex: rindge, inset, outset; 3° a cor da linha pode ser em rgb ou em outro formato aceitavel.
+
+ position: absolute; ou fixed; ou relative; // esse comado permite que você altere a posição de caixas; 
+"absolute" muda a posição da caixa em relação ao topo do site; 
+"fixed" muda aposição da caixa em relação ao topo do propio navegador deixando ele sempre visivel na pagina não importando se você rolala para cima ou para baixa; 
+"relative" muda a posição da cixa em relação a posição padrão que ela se encontraria sem nenhuma regra css.
+"static" ...
+
+ top: 20px // epecifica a distancia que a caixa tem que ficar em relação ao "topo" relativo a position que você especificou.
+
+ left: 50px // epecifica a distancia que a caixa tem que ficar em relação ao "esquerda" relativo a position que você especificou.
+
+ z-index: -1; ou 2; // caso uma caixa esteja em cima da outra a que tiver o numero maior ira se sobrepor e mostrara seu conteudo.
+
+ float: right; ou left; // faz a caixa que você selecionou oculpar um certo espço a esquerda a direita etc... fazendo com que o texto de outra caixa tenha que se moldar para caberém juntos sem oculprem os mesmos epaços.
+ 
+ width: 30%; // diz a "largura" que a caixa vai oculpar na tela. 
+ 
+ clear: both; // não permite que outras caixas fiquem em cima dele.
+ 
+ @media screen and (min-width: 600px) and (max-width: 800px) {codigo css a ser executado quado a tela tiver lagura de 600px a 800px nesse caso} // é como um if , le os parametros que vc coloca refentes a tela é se eles estiverem dentro o codigo lá dentro é executado se não então não. 

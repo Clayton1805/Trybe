@@ -31,16 +31,14 @@ document.createElement("p").innerHTML = "olá"; // cria uma teg html nesse caso 
 
 document.getElementById("divComUmId").appendChild(document.createElement("p").innerHTML = "olá") // .appendChild() incerre um elemeto html dentro da teg referida antes de seu . na ultima posição do elemento.(somente um elemento por vez)
 
-document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .querySelector() remove o tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
+document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .removeChild() remove  tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
 
 document.createElement("p").className = "batata";// .className serve para definir classe a tegs.
 
 document.createElement("p").id = "batatinha";// serve para definir ids a tegs.
 
 document.querySelectorAll(".main-content")[0].addEventListener("click", function() { qualquer codigo javaScript})// .addEventListener adiciona uma resposta a interação do usuario com o site ex: click, passar o mouse em cima, rolar a tela para baixo ...etc; primeiro o evento é especificado dentro de "" seguindo o padrão do javaScript então depois de uma , vem o codigo javaScript que geralmete vem dentro de função.
-
 change
-
 mouseover
 
 math.random() // retorna um numero aleatorio entre 0 e 1.

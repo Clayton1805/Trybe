@@ -1,0 +1,31 @@
+<input type="text" name="nome" maxlength=30> // maxlength define quantas caracteres podem ser escritas na caixa de texto.
+<input> //:
+type="ckeckbox" // faz quadrados de checar que a pessoa pode selcionar ou não.
+placeholder="digite algo" // deixa uma mensagem um poco fosca dentro do imput dizendo dando alguma instrução para o usuaria pelo texto que ele contem.
+disabled // desativa o campo de imput.
+maxlength="60" // define o maximo de caracteres que podem ser escritas no input.
+readonly // faz com que o valor do input não possa mais ser alterado e sirva somente para leitura.
+name="nome-completo" // da uma nomenclatura para o dado inserido isso serve para guardar esse dado de alguma forma.
+required // obriga a pessoa e prencher aquele requisito.
+
+<button name="" type="submit">click!!!</button>// define um botão para enviar dados do formulário para um manipulador de formulários.
+
+<label for="o-id-do-input-que-vc-que-que-seja-selecionado"></label>
+
+<select name="tamanho-de-camisas" id="">
+	<option>GG</option>
+	<option>G</option>
+	<option>M</option>
+</select> // cria opções de escolha em uma caixa para o usuario que pode escolher entre as option presentes.
+
+<textarea name=""
+
+<div></div> // agrupar em caixas o que você quise para fazer uma regra em css.
+
+<span></span> // agrupar textor para dar regra em css para ele.
+
+<a href="link.da.pagina">texto que aparece</a> // isso faz um link para uma pagina da web que abre em cima do site que voce esta.
+( <a target="_blan" href="link.da.pagina"> texto que aparece </a> = com essa adição de target="_blan" o site é aberto em outra guia) 
+( <a target="_blan" href="#id_da_caixa"> texto que aparece </a> = link que te leva até algum conteudo da sua pagina)
+
+<hr> // linha de divisão de conteudo.	
