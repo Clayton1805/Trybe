@@ -1,0 +1,100 @@
+link documentação oficial: https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
+
+Exemplo:
+import PropTypes from 'prop-types';
+...class função.
+Rating.propTypes = { rating: PropTypes.number.isRequired, img: PropTypes.string.isRequired };
+
+.isRequired // significa que essa prop (entrada) tem que existir na tag que chama a class/function
+
+PARTE DA DOCUMENTAÇÃO TRADUZIDA:
+importar PropTypes de 'prop-types';
+
+MyComponent.propTypes = {
+
+  // Você pode declarar que um prop é um tipo específico de JS. Por padrão, estes
+  // são todos opcionais.
+  optionalArray: PropTypes.array,
+  optionalBool: PropTypes.bool,
+  optionalFunc: PropTypes.func,
+  optionalNumber: PropTypes.number,
+  optionalObject: PropTypes.object,
+  optionalString: PropTypes.string,
+  optionalSymbol: PropTypes.symbol,
+
+  // Tudo o que pode ser renderizado: números, strings, elementos ou um array
+  // (ou fragmento) contendo esses tipos.
+  optionalNode: PropTypes.node,
+
+  // Um ​​elemento React.
+  optionalElement: PropTypes.element,
+
+  // Um ​​tipo de elemento React (ou seja, MyComponent).
+  optionalElementType: PropTypes.elementType,
+  
+  // Você também pode declarar que um prop é uma instância de uma classe. Isso usa
+  // Operador instanceof de JS.
+  optionalMessage: PropTypes.instanceOf (Message),
+
+  // Você pode garantir que sua proposta seja limitada a valores específicos tratando
+  // como um enum.
+  optionalEnum: PropTypes.oneOf (['Notícias', 'Fotos']),
+
+  // Um ​​objeto que pode ser um de muitos tipos
+  optionalUnion: PropTypes.oneOfType ([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.instanceOf (Message)
+  ]),
+
+  // Um ​​array de um certo tipo
+  optionalArrayOf: PropTypes.arrayOf (PropTypes.number),
+
+  // Um ​​objeto com valores de propriedade de um certo tipo
+  optionalObjectOf: PropTypes.objectOf (PropTypes.number),
+
+  // Um ​​objeto assumindo uma forma particular
+  optionalObjectWithShape: PropTypes.shape ({
+    color: PropTypes.string,
+    fontSize: PropTypes.number
+  }),
+  
+  // Um ​​objeto com avisos sobre propriedades extras
+  optionalObjectWithStrictShape: PropTypes.exact ({
+    nome: PropTypes.string,
+    quantidade: PropTypes.number
+  }),
+
+  // Você pode encadear qualquer um dos itens acima com `isRequired` para garantir um aviso
+  // é mostrado se o prop não for fornecido.
+  requiredFunc: PropTypes.func.isRequired,
+
+  // Um ​​valor de qualquer tipo de dados
+  requiredAny: PropTypes.any.isRequired,
+
+  // Você também pode especificar um validador personalizado. Deve retornar um erro
+  // objeto se a validação falhar. Não `console.warn` ou jogue, pois isso
+  // não funcionará dentro de `oneOfType`.
+  customProp: function (props, propName, componentName) {
+    if (! /matchme/.test (props [propName])) {
+      retornar um novo erro (
+        'Prop inválido `' + propName + '` fornecido para' +
+        '`' + nomedecomponente + '`. Falha na validação.'
+      );
+    }
+  },
+
+  // Você também pode fornecer um validador personalizado para `arrayOf` e` objectOf`.
+  // Deve retornar um objeto Error se a validação falhar. O validador
+  // será chamado para cada chave na matriz ou objeto. Os dois primeiros
+  // argumentos do validador são a matriz ou o próprio objeto, e o
+  // chave do item atual.
+  customArrayProp: PropTypes.arrayOf (function (propValue, key, componentName, location, propFullName) {
+    if (! /matchme/.test (propValue [chave])) {
+      retornar um novo erro (
+        'Prop inválido `' + propFullName + '` fornecido para' +
+        '`' + nomedecomponente + '`. Falha na validação.'
+      );
+    }
+  })
+};

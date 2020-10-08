@@ -1,0 +1,9 @@
+string.split('') // procura as caracteres colocadas dentro do split na string, é sense sensitive, e quando achar as caracteres ele trasforma ela em uma "," e quebra a string trasformando ela em um array, 
+
+string.endsWith()
+
+string.toUpperCase() // deixa todas as letras da string maiusculas.
+
+string.toLowerCase() // deixa todas as letras da string minusculas.
+
+string.includes('ola') // procura o que esta escrito dento do includes na string se encontra em algum luga RETORNA true se não false

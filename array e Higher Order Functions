@@ -15,3 +15,9 @@ Array.sort((valor1, valor2) => valor1 - valor2) // Retorna o array em uma ordem 
 Array.map
 
 Array.filter
+
+Array.reduce
+
+Array.concat
+
+Array.join(', '); // junta todos os elementos do array em uma string, e pega a string que é colocada dento dela e repete ela a cada no elemento do array.

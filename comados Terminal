@@ -1,0 +1,85 @@
+conselho: o tab completa automaticamente o texto a partir de poucas caracteres.
+e usar a setinha para cima para usar os codicos antigos.
+
+cd Imagegens = muda de pasta.
+
+cd .. = vai para pasta anterior a ela na ordem.
+
+mkdir = criar um diretorio.
+
+touch trybe.txt trybe2.txt= criar uma ou varias pastas divididas por espaços.
+
+cat > "".txt = criar pasta de texto e escrever dentro dela (para ecerrar o texto tecle enter e "ctrl d").
+
+cat >> "".txt = adicionar texto em um arquivo sem apagar o que estava lá.
+
+cp pasta pastaBakup = faz uma copia da pasta na mesma aréa com um nome diferente.
+
+clear = limpar os codigos na tela.
+
+cat arquivo.txt arquivo2.txt = exibe o texto inteiro de um ou mais arquivos.
+
+less arquivo.txt = para ler o texto do arquivo só que em uma pagina fora do codigo do terminal (é um antecessor do bloco de notas) para sair dele clique em " q ".
+
+rm arqivo_backup.txt = apagar arquivo.
+
+rm -r dowloads = apagar diretorios.
+
+head -n 60 science.txt = exibe as primeiras linhas do texto (nesse caso 60).
+
+tail -n 40 science.txt = exibe ultimas linhas do texto (nesse caso 40).
+
+grep ciência science.txt = PROCURA palavras em textos e retorna as linhas que contem as palavras.
+
+grep -i ciência science.txt = mesma função q a sem o -i porem busca sendo tanto maiuscula quanto minuscula.
+
+grep -v ciência science.txt = exibe as linhas que não contem a palavra.
+
+grep -n ciência science.txt = precedem cada linha correspondente com o número da linha.
+
+grep -c ciência science.txt = imprime apenas a contagem total de linhas que contem as palavras.
+
+grep -vnc ciência science.txt = as funçoes podem ser uzadas juntas.
+
+* = é o x o qualquer coisa do terminal. ex: ls * isso mostra todas as pastas que tem menos as ocultas.MUITO UTIL.
+
+man cd = qualquer comando q vc por na frante de man ele te dara um manual em ingles da função. que vc sai apertando q .
+
+whatis cd = qualquer comando q vc por na frante de whatis ele retorna o nome completo da função em ingles.
+
+wc -w science.txt = conta as quantidades de palavras que aquele texto contem.
+
+wc -l science.txt = conta a quantas linhas tem o texto.
+
+sort <lista.txt = organiza cada inha em ordem alfabetica se alista for < enviada pra ela.
+
+pasta.txt> = liga a saida de um com aentrada do outro.
+
+<pasta.txt = liga a saida de um com aentrada do outro.
+
+>> = anexa a saida de um a entrada de outro.
+
+| = liga a saida de um com a entrada de outro.
+
+find . -name "" = procora nomes na pasta que vc está e retorna todos.
+
+find / -name "" = procora nomes em todo o pc e
+retorna todos.
+
+echo 'fcberbv' = retona aquilo que vc escrevel.
+
+wget link= baixar um aplicativo.
+
+jobs = trabalhos sendo feitos em segundo plano.
+
+& no final do comado = significa que sera execultado em segundo plano sem travar seu terminal.
+
+kill -9 = encerra um processo na hora.
+
+ps = identificador de processos
+
+ctrl z = parar o processo que esta no terminal.
+
+bg = fazer o processo travado voltar em segundo plano.
+
+sleep 10 = trava o terminal (nesse caso por 10 s) para voltar so apetar ctrl z ou c.

@@ -27,11 +27,11 @@ nextElementSibling: retorna o próximo elemento.
 previousElementSibling: retorna o elemento anterior.
 (obs: o Element muitas vezes no lugar do Note serve para especificar que so queremos que considere aquilo que tem teg e não linhas com espaços no codigo ou textos soltos).
 
-document.createElement("p").innerHTML = "olá"; // cria uma teg html nesse caso vai retornar uma teg <p></p>, depois disso você pode continuar adicionado conteudo nela como se fosse uma teg normal.
+document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .removeChild() remove  tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
 
 document.getElementById("divComUmId").appendChild(document.createElement("p").innerHTML = "olá") // .appendChild() incerre um elemeto html dentro da teg referida antes de seu . na ultima posição do elemento.(somente um elemento por vez)
 
-document.getElementById("divComUmId").removeChild(document.querySelector(".main-content"));// .removeChild() remove  tudo aquilo que voce colocar dentro dele do seu codigo html pode ser uma teg ou até um texto solto.
+document.createElement("p").innerHTML = "olá"; // cria uma teg html nesse caso vai retornar uma teg <p></p>, depois disso você pode continuar adicionado conteudo nela como se fosse uma teg normal.
 
 document.createElement("p").className = "batata";// .className serve para definir classe a tegs.
 
