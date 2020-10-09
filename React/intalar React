@@ -1,0 +1,3 @@
+npx create-react-app react_12_1 // comando no terminal para baixar a pasta do react.(o ultimo texto do comando é o nome que vc quer dar para o arquivo)
+npm start // rode esse comado dentro da pasta criada pelo comando acima e se tudo der certo uma pagina sera aberta no seu browser com o react.(de preferencia rode esse comando no terminal do ubundo já que depois do comando terminal não pode ser usado para outros comandos e tem que permanecer aberto para tudo funcinar da forma correta)
+
