@@ -1,0 +1,7 @@
+beforeEach(() => {
+  ...
+}); // antes de cada teste ele executa essa função, vc pode colocar ele no escopo geral ou no escopo de um describe deixando ele mais contido
+
+afterEach(() => {
+  ...
+}); // após cada teste ele executa essa função, vc pode colocar ele no escopo geral ou no escopo de um describe deixando ele mais contido.
