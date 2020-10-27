@@ -1,1 +1,4 @@
-redux dev tus // estenção para o browser mostar como esta o redux
+redux-devtools-extension // estenção para o browser mostar como esta o redux
+
+const store = createStore(nomeDoReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); // codigo que precisa ser posto na criação do store para a estenção funcionar, com o primeiro parametro sendo o reducer como é normalmente e o segundo depois da "," sendo o codigo necessario para a estenção funcionar
+
