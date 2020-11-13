@@ -1,0 +1,26 @@
+serve para compartilhar estado ou funções de um componente pai para os seus filhos e todos a baixo de sua irearquia diretamente;
+(para mais informaçoes e exemplos va no codigo e no fim da aula 18_1).
+
+import React, { createContext } from 'react'; // import createContext.
+const MyContext = createContext() // função para criar um contexto no react, parecida com store do redux, seu retorno e o contexto que é guardado em uma const;(seu primeiro parametro é um valor inicial).
+
+<MyContext.Provider value={/* algum valor compartilhado */}>
+  {children}
+</MyContext.Provider> // esse conponente com os contexto com a chave Provider Prove a todos os componentes filhos dele e os filhos desses componentes, assim sucessivamente, a informação passada em value que comunmente é um objeto para poder guardar mais informações.
+
+<MyContext.Consumer>
+  {(value) => {
+    return /* renderiza html podendo utilizar o value recebido do contexto */
+  }}
+</MyContext.Consumer> // esse componente que é contexto com a chave Consumer recebe como filho uma função que recebe como primeiro parametro o value dado no Provider.
+
+class App extends React.Component {  
+  render() {
+    const valor = this.context;
+    // ...
+  }
+}
+App.contextType = MyContext; // vc pode acessar o value do contexto com this.context desde que vc defina o contextType dele como igual ao contexto; (testar o funcionamento desse contextType porque ele parece ser muito bom).
+
+{children} // uma caracteristica do React que basicamente chama todos os filhos colocados dentro do componente que renderiza ele, assim renderizando todos eles.
+
