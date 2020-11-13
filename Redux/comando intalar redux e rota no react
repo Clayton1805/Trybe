@@ -1,0 +1,3 @@
+npm install react-redux redux react-router-dom // comando para instalar a dependencia react-router e redux no react
+
+install --save redux react-redux // instalar redux

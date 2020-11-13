@@ -1,0 +1,3 @@
+ir para a branch master e dar um pull nela
+ir para a branch que vc que atualizar e dar um git pull origin master
+se não tiver nenhum conflito vai atualizar se tirar tera que ser resolvido no codigo
