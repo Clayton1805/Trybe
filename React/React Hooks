@@ -1,8 +1,14 @@
 import React, { useState } from "react"; // import useState.
 const [count, setCount] = useState(0) // useState serve para usar state em componentes funcinais (funções que retornam html), retorna um array onde o 1° posição é o valor do state e o 2° é uma função que reatribui o valor do estado pelo o do seu primeiro parametro, o primeiro parametro de useState corresponde ao valor inicial do state;
-(desetruturando dessa forma o array vc pode dar o nome que quiser para o 1° e 2° parametro mas como padrão o segundo costuma ser setNomeDoPrimeiroParametro)
-(a função que muda o parametro sempre espera caso alguma mudança anterior no seu estado já tenha sido requisitada ou seja vc n tem que se preocupar em o state ser atualizado fora da ordem em que foi chamado no codigo por acontecer de forma assincrona).
+(desetruturando dessa forma o array vc pode dar o nome que quiser para o 1° e 2° parametro mas como padrão o segundo costuma ser setNomeDoPrimeiroParametro) (a função que muda o parametro sempre espera caso alguma mudança anterior no seu estado já tenha sido requisitada ou seja vc n tem que se preocupar em o state ser atualizado fora da ordem em que foi chamado no codigo por acontecer de forma assincrona).
 
 import React, { useContext } from 'react'; // import useContext.
 const { stateA, setStateA, stateB } = useContext(MyContext); // useContext serve para pegar o valor do contexto de forma mais simples, tudo o que vc precisa fazer é importar o contexto e passalo como 1° parametro para essa dunção e pronto o valor do contexto é retornado.
+
+useEffect(() => {...} , []); // quando disparado executa a função que recebe como primeiro parâmetro;
+- Se não receber um segundo parâmetro, ele executa a função sempre que o componente é renderizado(atualizado, componentDidMount + componentDidUpdate);
+- Se receber um array vazio como segundo parâmetro, ele executa a função somente quando o componente é montado(componentDidMount);
+- Quando ele recebe um array com valores dentro, sempre que algum desses valores é alterado, a função é executada("componentDidUpdate" mais especifico não geral igual update);
+- Se ele retorna uma função, essa função é executada quando o componente é desmontado e também antes da próxima renderização(componentWillUnmount, ex: return () => ... ; isso dentro da função do 1° parametro).
+(Um hook customizado por convenção é definido com uma função que começa com a palavra use. É possível incorporar a lógica de outros hooks em seu funcionamento).
 

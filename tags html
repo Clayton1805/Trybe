@@ -28,4 +28,23 @@ required // obriga a pessoa e prencher aquele requisito.
 ( <a target="_blan" href="link.da.pagina"> texto que aparece </a> = com essa adição de target="_blan" o site é aberto em outra guia) 
 ( <a target="_blan" href="#id_da_caixa"> texto que aparece </a> = link que te leva até algum conteudo da sua pagina)
 
-<hr> // linha de divisão de conteudo.	
+<hr> // linha de divisão de conteudo.
+
+<table>
+    <thead>
+        <tr>
+            <th>Categorias</th> // th deixa em negrito deixamdo claro que esse é o heder da tabela
+            <th>nome</th>
+        </tr> // tr uma linha da tabela
+    </thead> // ethead mcapsula o heder da tabela
+    <tbody>
+    	<tr>
+            <td>Categorias 1</td> // td delimita que é uma informação da tabela em um campo d linha
+            <td>nome 1</td>
+        </tr>
+        <tr>
+            <td>Categorias 2</td>
+            <td>nome 2</td>
+        </tr>
+    </tbody> // tbody emcapsula as informações da tabela
+</table> // table emcapsula a tabela

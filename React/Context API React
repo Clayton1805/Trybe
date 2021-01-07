@@ -4,6 +4,7 @@ serve para compartilhar estado ou funções de um componente pai para os seus fi
 import React, { createContext } from 'react'; // import createContext.
 const MyContext = createContext() // função para criar um contexto no react, parecida com store do redux, seu retorno e o contexto que é guardado em uma const;(seu primeiro parametro é um valor inicial).
 
+const { children } = this.props;
 <MyContext.Provider value={/* algum valor compartilhado */}>
   {children}
 </MyContext.Provider> // esse conponente com os contexto com a chave Provider Prove a todos os componentes filhos dele e os filhos desses componentes, assim sucessivamente, a informação passada em value que comunmente é um objeto para poder guardar mais informações.
@@ -22,5 +23,5 @@ class App extends React.Component {
 }
 App.contextType = MyContext; // vc pode acessar o value do contexto com this.context desde que vc defina o contextType dele como igual ao contexto; (testar o funcionamento desse contextType porque ele parece ser muito bom).
 
-{children} // uma caracteristica do React que basicamente chama todos os filhos colocados dentro do componente que renderiza ele, assim renderizando todos eles.
+{children} // uma prop caracteristica do React que basicamente chama todos os filhos colocados dentro do componente que renderiza ele, assim renderizando todos eles.
 

@@ -1,3 +1,6 @@
-ir para a branch master e dar um pull nela
-ir para a branch que vc que atualizar e dar um git pull origin master
-se não tiver nenhum conflito vai atualizar se tirar tera que ser resolvido no codigo
+Para atualizar sua branch:
+ir para a branch com as atualizações e dar um
+git pull origim branch-com-atualizações
+ir para a branch que vc quer atualizar e dar um
+git pull origin branch-com-atualizações
+se não tiver nenhum conflito vai atualizar se tiver tera que ser resolvido no codigo

@@ -1,0 +1,1 @@
+order by 1°Coluna, 2°Culuna // organiza a coluna em ordem crecente ou decrecente(dependedo do parametro desc ou asc se não me engano), então ele ordena baseado na ordem da 1° coluna se tive algum repetido na primeira coluna ele usa como criterio de desempate a ordem da 2° coluna;

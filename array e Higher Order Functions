@@ -6,9 +6,9 @@ Array.forEach(element => element * 3); // Percorre todos os elementos do array c
 
 Array.find((element, index) => element === element && index !== index); // Retorna o 1° elemento do array que tenha a resposta booleana true vinda da arrow function =>.
 
-Array.some(element => element > 0); // Retorna true se 1 dos elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico E " && ".
+Array.some(element => element > 0); // Retorna true se 1 dos elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico Ou " || ".
 
-Array.every(element => element > 0); // Retorna true se TODOS os elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico OU " || ".
+Array.every(element => element > 0); // Retorna true se TODOS os elementos da minha lista retornar a resposta booleana true para a pegunta da function, equivalente ao operador logico E " && ".
 
 Array.sort((valor1, valor2) => valor1 - valor2) // Retorna o array em uma ordem a sua escolha
 
