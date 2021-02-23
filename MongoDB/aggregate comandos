@@ -1,0 +1,8 @@
+.pretty(); // colocar ao final de uma query que use aggregate para organizar o resultado de saida.
+
+{ $group: { _id: null, total: { $sum: 1 } } }, // pipeline utilizada para contar todos os documentos e colocar isso em uma chave no caso total
+
+{ $unwind: "$chave_com_array" }, // quebra o aary e replica os documentos, de acordo com o tamanho do array, para que a chave que vc passou tenha um valor só correspondente a um dos campos listados no array assim essa chave deixa de ser um array.(se a chave tiver um valor null ou um array vazio ou não for um array o documento sera descartado)
+
+{ $size: "$chave_com_array" }, // equivalente ao length conta qual o tamanho do array.(se vc passa um valor que não seja um array ou em que a chave não exista ele vai retornar um erro por isso sempre filtre a chave com o $exists pra confirmar que só vai usar ele onde a chave exista)
+

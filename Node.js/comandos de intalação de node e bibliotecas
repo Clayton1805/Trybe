@@ -1,0 +1,7 @@
+npm init -y // inicia o node no diretorio que vc esta criando o arquivo package.json que possui um objeto com tudo sobre o node.
+
+npm i  ou  npm install // instala todas a dependencias que estão especificadas no package.json na chave dependencies ou devDependencies, criando ou adicionando conteudo a pasta node_modules e o arquivo package-lock.json (que guardam informações sobre as dependencias).
+
+npm i express // insatla a dependencia express, sendo salva na chave dependencies do package.json, cria os documentos especificados no npm i.
+
+npm i nodemon -D // instala a dependencia nodemon, sendo salva na chave devDependencies do package.json pelo comando opcional -D, cria os documentos especificados no npm i.

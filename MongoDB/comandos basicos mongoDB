@@ -1,0 +1,12 @@
+criar um banco ou seleciona-lo para usar //
+use nomeDobanco
+
+criar e colocar dados em uma coleção(tipo uma tabela) //
+
+
+ver os bancos que existem //
+show dbs
+
+comando para listar coleções de um banco //
+show collections
+

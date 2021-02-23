@@ -1,0 +1,5 @@
+$all: [...] // usado para filtrar arrays, retorna todos os documentos com arrays que tem todos os parametros que foram passados correspondentes independente da ordem.(corresponde ao aperador E)
+
+$in: [...] // usado para filtrar arrays e tambem chaves com um valor especifico, retorna todos os documentos que tem, arrays possuindo pelo menos um dos parametros que foram passados independente da ordem, ou se não for um array, todos os documentos que tem a chave especificada com um dos valores passados no array do in.(corresponde ao aperador OU)
+
+Se em um find ou aggregate match vc igualar uma chave que contem um array a uma string ou numero ele vai retornar o array que possui um campo ou mais em sua lista, independente de sua posição, igual ao especificado ex: db.movies.find({ genres: "Crime" }); onde genres e um array ex: ["Adventure", "Crime"].

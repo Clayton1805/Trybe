@@ -1,0 +1,12 @@
+comando para ativar mongoDB //
+sudo service mongod start
+
+comando para verificar se o mongo foi ativado //
+sudo service mongod status
+
+parar execução do mongo //
+sudo service mongod stop
+
+reiniciar o mongoDB //
+sudo service mongod restart
+

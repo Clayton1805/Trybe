@@ -1,0 +1,5 @@
+git commit -m "a mensagem correta" --amend // comando para mudar a mensagem do ultimo commit que foi feito caso tenha errado.
+
+git log // ver mensagens dos commits.
+
+video do akita esplicando: https://www.youtube.com/watch?v=6OokP-NE49k&t=2001s
