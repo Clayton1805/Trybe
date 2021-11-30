@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=6wFeLR07k64
+
+eslint --init // colacar e iniciaizar o arquivo eslint no diretorio que vc executar
+
+ctrl + shift + p, depois ecolher format documet // isso vai arumar muitos erros automaticamente
+
+tirar regras do eslint colocar no rules do .eslintrc a regra off ex: rules: {
+  "react/jsx-curly-spacing": "off",
+}, para pegar o neme do erro coloque o mause em cima do codigo vermelhinho do lint e vc verar o neme do erro dentro do eslint(...)

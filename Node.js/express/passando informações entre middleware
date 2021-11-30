@@ -1,0 +1,5 @@
+para passar informações de um middleware para outro depois do next vc pode salvar essa informação criando uma chave no objeto que é por pradrão vazio res.locals ex:
+app.get('/ola', (_req, res, next) => {
+  res.locals.ola = 'sou foda';
+  next();
+},(_req, res) => res.json(res.locals));

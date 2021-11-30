@@ -1,0 +1,4 @@
+caso a chave ssh do git peça sua senha toda hora:
+ssh-add ~/.ssh/id_rsa // para colocar a chave no lur certo
+ssh-add -l // se não der erro tudo deu certo
+

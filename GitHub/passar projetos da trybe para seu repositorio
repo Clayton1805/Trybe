@@ -1,0 +1,20 @@
+Cria um repositório na sua conta do Github
+  (é bom adicionar o readme na configuração, porque aí já vai ter uma branch main )
+Na sua máquina, clona esse repositório criado.
+Entra na pasta
+Adiciona o repositório remoto da Trybe
+git remote add <nome do repo, exemplo: trybe> <link do projeto trybe>
+Faz um fetch
+git fetch <nome do repo remoto, exemplo: trybe>
+Cria branch local
+git checkout -b <nome da sua branch local, exemplo: transferencia> trybe/<nome da sua branch no projeto trybe>
+Nessa hora, é bom apagar o readme desta branch, já que no repositório do seu projeto você deve ter um readme próprio, diferente da trybe, e nessa branch do passo anterior vai ter o readme da trybe. Apague o readme e comitta
+Vai para a branch main
+Faz o merge da main com a branch local que foi criada (que tem o código de sua branch do projeto trybe. Nesse exemplo, a branch se chama transferencia)
+# dentro da branch main 
+git merge <nome da sua branch local, exemplo: transferencia> --allow-unrelated-histories
+(sem esse --allow-unrelated-histories, vai dar erro “fatal: refusing to merge unrelated histories”)
+ (mas sobre isso em: https://community.umbler.com/br/t/resolvendo-o-erro-fatal-refusing-to-merge-unrelated-histories-no-git/657)
+Faz o push da main com o repositorio remoto do seu projeto no github
+git push origin
+Pronto. Seu repositório da sua conta do github tem o código da sua branch do projeto

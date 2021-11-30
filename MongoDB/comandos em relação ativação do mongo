@@ -10,3 +10,6 @@ sudo service mongod stop
 reiniciar o mongoDB //
 sudo service mongod restart
 
+iniciar mongoshell no terminal //
+mongo
+

@@ -1,0 +1,3 @@
+git reflog // historico de todos os comandos que foram feitos no git seja commit, reset etc..(mostra id)
+git log // historico dos commits da branch que vc estiver (mostra id)
+git reset id-do-commit // volta a branch para commits anteriores

@@ -1,0 +1,6 @@
+python3 -m venv .venv && source .venv/bin/activate
+
+python3 -m venv .venv // criar pasta/arquivo de ambiente virtual .venv no diretorio em que o comando for executado
+source .venv/bin/activate // executar o ambiente virtual o .venv do diretorio em que o comando for executado (um ambiente separado tipo o packge.json do node)
+which python // ver qual pyton esta sendo usado o global ou o do ambiente virtual
+deactivate // desativar ambiente virtual

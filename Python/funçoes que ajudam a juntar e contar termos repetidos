@@ -1,0 +1,7 @@
+contador
+calculador de maximo python
+ex: Counter(numeros).most_common(1)[0][0]
+
+range(n) // usado para passar um numero em um for in
+max(array)
+arrat[1:4], arrat[1:], arrat[:4] // esse dois pontos serve para pegar todos os elementos em um certos indice determinado se não passar so um o outro pega até o final
